@@ -1,5 +1,6 @@
 package com.example.sunnyweather.ui.place
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunnyweather.R
+import com.example.sunnyweather.ui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.fragment_place.*
 
 /**
@@ -20,7 +22,7 @@ import kotlinx.android.synthetic.main.fragment_place.*
  */
 class PlaceFragment : Fragment() {
     //lazy函数 懒加载技术来获取 PlaceViewModel 的实例  允许在整个类中随时使用viewModel这个变量，而完全不用关心它何时初始化、是否为空等前提条件。
-    private val viewModel by lazy { ViewModelProvider(this).get(PlaceViewModel::class.java) }
+    val viewModel by lazy { ViewModelProvider(this).get(PlaceViewModel::class.java) }
 
     private lateinit var adapter: PlaceAdapter
 
@@ -32,6 +34,22 @@ class PlaceFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+        //在 PlaceFragment 中进行了判断，如果当前已有存储的城市数据，
+        // 那么就获取已存储的数据并解析成Place对象，然后使用它的经纬度坐标和城市名直接跳转并传递给WeatherActivity ，
+        // 这样用户就不需要每次都重新搜索并选择城市了
+        if (viewModel.isPlaceSaved()){
+            val place= viewModel.getSavePlace()
+            val intent =Intent(context,WeatherActivity::class.java).apply {
+                putExtra("location_lng",place.location.lng)
+                putExtra("location_lat",place.location.lat)
+                putExtra("place_name", place.name)
+            }
+            startActivity(intent)
+            activity?.finish()
+            return
+        }
+
         //设置 LayoutManager 和适配器
         val layoutManager = LinearLayoutManager(activity)
         recyclerView.layoutManager = layoutManager

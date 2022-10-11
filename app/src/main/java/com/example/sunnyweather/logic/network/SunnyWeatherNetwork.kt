@@ -29,14 +29,21 @@ object SunnyWeatherNetwork {
      */
     private val placeService = ServiceCreator.create<PlaceService>()
 
-    suspend fun searchPlaces(query : String )= placeService.searchPlaces(query).await()
+    private val weatherService = ServiceCreator.create<WeatherService>()
 
-    private suspend fun <T> Call <T>.await() :T{
+    suspend fun searchPlaces(query: String) = placeService.searchPlaces(query).await()
+
+
+    suspend fun getDailyWeather(lng: String, lat: String) = weatherService.getDailyWeather(lng, lat).await()
+
+    suspend fun getRealtimeWeather(lng: String, lat: String) = weatherService.getRealtimeWeather(lng, lat).await()
+
+    private suspend fun <T> Call<T>.await(): T {
         return suspendCoroutine { continuation ->
-            enqueue(object : Callback<T>{
+            enqueue(object : Callback<T> {
                 override fun onResponse(call: Call<T>, response: Response<T>) {
-                    val body =response.body()
-                    if (body !=null) continuation.resume(body)
+                    val body = response.body()
+                    if (body != null) continuation.resume(body)
                     else continuation.resumeWithException(RuntimeException("response body is null"))
                 }
 
@@ -47,4 +54,5 @@ object SunnyWeatherNetwork {
             })
         }
     }
+
 }
