@@ -34,6 +34,10 @@ class PlaceViewModel : ViewModel() {
     fun searchPlaces(query: String) {
         searchLiveData.value = query
     }
+
+    /**
+     * Repository 仓库层没开开启线程,直接调用仓库层中的相应接口并返回结果
+     */
     fun savePlace(place: Place)=Repository.savePlace(place)
 
     fun getSavePlace()=Repository.getSavedPlace()

@@ -1,10 +1,6 @@
 
-j
-:app/src/main/java/com/example/sunnyweather/MainActivity.kt,5\6\563f187e079c0720f852e3f188fb662284e88a83
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-y
-Iapp/src/main/java/com/example/sunnyweather/ui/weather/WeatherViewModel.kt,c\c\ccc6b8393da15abd8e7594f33cf8416ee83eded4
 m
 =app/src/main/java/com/example/sunnyweather/logic/model/Sky.kt,9\7\978b4c8358b7f3756ace4c4e63d7f1e574882881
 <
@@ -13,8 +9,6 @@ F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
-u
-Eapp/src/main/java/com/example/sunnyweather/SunnyWeatherApplication.kt,f\c\fcfd4fd2f551d724333227032e76e9c8f4c51653
 w
 Gapp/src/main/java/com/example/sunnyweather/logic/model/DailyResponse.kt,1\a\1a743de53eaff7e070ef44859fd393d716e08c14
 q
@@ -22,4 +16,16 @@ Aapp/src/main/java/com/example/sunnyweather/logic/model/Weather.kt,7\2\72037627
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 x
-Happ/src/main/java/com/example/sunnyweather/ui/weather/WeatherActivity.kt,4\c\4c8642805acabb227f5cce66fb4dd92280fbf2c3
+Happ/src/main/java/com/example/sunnyweather/logic/network/PlaceService.kt,5\6\56e3a33bb9d4e963c7eed17ef27f2208cc8c79e9
+z
+Japp/src/main/java/com/example/sunnyweather/logic/network/ServiceCreator.kt,7\b\7b38c9a7f1a7529c96a8866dc398d5114068d361
+z
+Japp/src/main/java/com/example/sunnyweather/logic/network/WeatherService.kt,1\b\1b50e6a043283b9801304d3b3d5f01302f4cc083
+z
+Japp/src/main/java/com/example/sunnyweather/logic/model/RealtimeResponse.kt,4\d\4d7d26d6514b541bf11cd82e4d384f4649b64f45
+w
+Gapp/src/main/java/com/example/sunnyweather/logic/model/PlaceResponse.kt,a\9\a9f639d3b3894855c5cddb98c7208290d55105c3
+u
+Eapp/src/main/java/com/example/sunnyweather/ui/place/PlaceViewModel.kt,1\6\165252449cd5f72607bff11d93542ca2b94d4f0a
+y
+Iapp/src/main/java/com/example/sunnyweather/ui/weather/WeatherViewModel.kt,c\c\ccc6b8393da15abd8e7594f33cf8416ee83eded4

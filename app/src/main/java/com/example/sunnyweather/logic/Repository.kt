@@ -35,6 +35,9 @@ import kotlin.coroutines.CoroutineContext
 
 object Repository {
 
+    /**
+     * PlaceDao 接口封装
+     */
     fun savePlace(place: Place) =PlaceDao.savePlace(place)
 
     fun getSavedPlace() =PlaceDao.getSavedPlace()
