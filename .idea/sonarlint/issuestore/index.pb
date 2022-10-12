@@ -1,6 +1,4 @@
 
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 m
 =app/src/main/java/com/example/sunnyweather/logic/model/Sky.kt,9\7\978b4c8358b7f3756ace4c4e63d7f1e574882881
 <
@@ -13,8 +11,6 @@ w
 Gapp/src/main/java/com/example/sunnyweather/logic/model/DailyResponse.kt,1\a\1a743de53eaff7e070ef44859fd393d716e08c14
 q
 Aapp/src/main/java/com/example/sunnyweather/logic/model/Weather.kt,7\2\72037627e33f6b2b9af09c2990049979dacb9337
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 x
 Happ/src/main/java/com/example/sunnyweather/logic/network/PlaceService.kt,5\6\56e3a33bb9d4e963c7eed17ef27f2208cc8c79e9
 z
