@@ -1,8 +1,6 @@
 
 m
 =app/src/main/java/com/example/sunnyweather/logic/model/Sky.kt,9\7\978b4c8358b7f3756ace4c4e63d7f1e574882881
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 X
@@ -21,7 +19,13 @@ z
 Japp/src/main/java/com/example/sunnyweather/logic/model/RealtimeResponse.kt,4\d\4d7d26d6514b541bf11cd82e4d384f4649b64f45
 w
 Gapp/src/main/java/com/example/sunnyweather/logic/model/PlaceResponse.kt,a\9\a9f639d3b3894855c5cddb98c7208290d55105c3
-u
-Eapp/src/main/java/com/example/sunnyweather/ui/place/PlaceViewModel.kt,1\6\165252449cd5f72607bff11d93542ca2b94d4f0a
 y
 Iapp/src/main/java/com/example/sunnyweather/ui/weather/WeatherViewModel.kt,c\c\ccc6b8393da15abd8e7594f33cf8416ee83eded4
+
+Oapp/src/main/java/com/example/sunnyweather/logic/network/SunnyWeatherNetwork.kt,9\0\90edd7dcc9359f4384e3d1f8461185fa2a27131c
+p
+@app/src/main/java/com/example/sunnyweather/logic/dao/PlaceDao.kt,9\b\9bb3078394da869a54a6425297eeb6ad7900e96b
+x
+Happ/src/main/java/com/example/sunnyweather/ui/weather/WeatherActivity.kt,4\c\4c8642805acabb227f5cce66fb4dd92280fbf2c3
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
